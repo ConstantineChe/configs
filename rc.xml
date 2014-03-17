@@ -302,8 +302,8 @@
   </keybind>
 
   <!-- Keybindings for running applications -->
-<keybind key="A-S-t">
-<action name="execute"><command>urxvtc</command></action>
+<keybind key="W-t">
+<action name="execute"><command>lxterminal</command></action>
 </keybind>
 
 <keybind key="A-S-f">
