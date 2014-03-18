@@ -52,11 +52,11 @@ URxvt*boldFont:		xft:Inconsolata:size=10:style=bold:antalias=true:hintig=slight
 URxvt*scrollBar: false
 
 
-*background: black
-URxvt*foreground: #C0C0C0
+URxvt*background: black
+URxvt*foreground: white
 
 
-URxvt*perl-lib: /home/coon/.config/urxvt/perl/
+URxvt*perl-lib: /home/constantine/.config/urxvt/perl/
 
 
 #clickable urls
@@ -78,8 +78,8 @@ URxvt.tabbed*transparent:true
 URxvt.tabbed.title:true
 URxvt.tabbed.autohide:true
 URxvt.tabbedex*transparent:true
-URxvt*keysym.Control-Shift-c:   perl:clipboard:copy
-URxvt*keysym.COntrol-Shift-v:   perl:clipboard:paste
+
+# tabbedex
 *keysym.Control-t: perl:tabbedex:new_tab
 *keysym.Control-Tab: perl:tabbedex:next_tab
 URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
@@ -88,4 +88,8 @@ URxvt.keysym.Control-Shift-Right: perl:tabbex:move_tab_right
 URxvt.keysym.Control-Shift-R: perl:tabbex:rename_tab
 
 
+
+URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 
