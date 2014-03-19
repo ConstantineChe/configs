@@ -16,9 +16,15 @@ fi
 
 
 # Put your fun stuff here.
-
-# Aliases
-alias netbeans="/home/constantine/netbeans-7.4/bin/netbeans & exit"
+#################################################################
+#========================== Aliases =============================
+#################################################################
+#=========================Local aliases==========================
+#============================ Work =================================
+alias netbeans="/home/constantine/netbeans-7.4/bin/netbeans & exiit"
+#============================ Home =================================
+#================================================================
 alias chrom="chromium & exit"
 alias reboot="sudo shutdown -r now"
 alias shutdown="sudo shutdown -h now"
+
