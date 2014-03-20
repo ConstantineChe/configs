@@ -1,0 +1,38 @@
+alignment top_left
+
+TEXT
+$nodename - $sysname $kernel on $machine
+$hr
+${color green}Uptime:$color $uptime
+${color green}Frequency (in MHz):$color $freq
+${color green}Frequency (in GHz):$color $freq_g
+${color green}RAM Usage:$color $mem/$memmax - $memperc% ${membar 4}
+${color green}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar 4}
+${color #42AE4A}Usage (Avg):${color #42AE4A} ${freq_dyn_g}Ghz ${color lightgrey}${cpu cpu0}% ${alignr}${color #42AE4A}${cpubar cpu0 5,80}
+${color #42AE4A}Usage (Core 1):${color #42AE4A} ${freq_dyn_g cpu1}Ghz ${color lightgrey}${cpu cpu1}% ${alignr}${color #42AE4A}${cpubar cpu1 5,80}
+${color #42AE4A}Usage (Core 2):${color #42AE4A} ${freq_dyn_g cpu2}Ghz ${color lightgrey}${cpu cpu2}% ${alignr}${color #42AE4A}${cpubar cpu2 5,80}
+${color #42AE4A}Average
+${cpugraph cpu0 42AE4A eeeeee}
+${color #42AE4A}Core 1 $alignr Core 2
+${color #42AE4A}${cpugraph cpu1 25,120 42AE4A eeeeee} ${color #42AE4A} $alignr${color #42AE4A}${cpugraph cpu2 25,120 42AE4A eeeeee}
+${color #42AE4A}Processes:${color lightgrey} $processes ${color #42AE4A}Run:${color lightgrey} $running_processes ${color #42AE4A}CPU Temp:${color lightgrey} ${execi 1100 cat /proc/acpi/thermal_zone/THRM/temperature | grep -o "[0-9]* C"}
+${color #42AE4A}Core 1 Temp: ${color lightgrey}${execi 8 sensors | grep -A 1 'Core0' | cut -c13-16 | sed '/^$/d'} C ${color #42AE4A}Core 2 Temp: ${color lightgrey}${execi 8 sensors | grep -A 1 'Core1' | cut -c13-16 | sed '/^$/d'} C
+
+$hr
+${color green}File systems:
+ / $color ${fs_free /}/${fs_size /} ${fs_bar 6 /}
+${color green}Networking:
+ Up:$color ${upspeed eth0} k/s${color grey} - Down:${color green} ${downspeed eth0} k/s
+$hr
+$color MPD: $mpd_status $mpd_artist - $mpd_title from $mpd_album at $mpd_vol
+Bitrate: $mpd_bitrate\n" "Progress: $mpd_bar
+$color XMMS2: $xmms2_status $xmms2_artist - $xmms2_title from $xmms2_album
+Progress: $xmms2_bar
+$color Name		PID	CPU%	MEM%
+ ${color lightgrey} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
+ ${color lightgrey} ${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}
+ ${color lightgrey} ${top name 3} ${top pid 3} ${top cpu 3} ${top mem 3}
+ ${color lightgrey} ${top name 4} ${top pid 4} ${top cpu 4} ${top mem 4}
+${tail /var/log/Xorg.0.log 3}";
+
+
