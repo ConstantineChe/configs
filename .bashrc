@@ -21,8 +21,12 @@ fi
 #################################################################
 #=========================Local aliases==========================
 #============================ Work =================================
-alias netbeans="/home/constantine/netbeans-7.4/bin/netbeans & exiit"
+#alias netbeans="/home/constantine/netbeans-8.0/bin/netbeans & exit"
+#alias phpstorm="/home/constantine/PhpStorm-133.803/bin/phpstorm.sh"
 #============================ Home =================================
+#alias netbeans="/home/coon/netbeans-8.0/bin/netbeans & exit"
+#alias pycharm="/path/to/pycharm.sh"
+#alias phpstorm="/home/constantine/PhpStorm-133.803/bin/phpstorm.sh"
 #================================================================
 alias chrom="chromium & exit"
 alias reboot="sudo shutdown -r now"
