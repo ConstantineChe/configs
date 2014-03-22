@@ -24,10 +24,8 @@ ${color green}File systems:
 ${color green}Networking:
  Up:$color ${upspeed eth0} k/s${color grey} - Down:${color green} ${downspeed eth0} k/s
 $hr
-$color MPD: $mpd_status $mpd_artist - $mpd_title from $mpd_album at $mpd_vol
-Bitrate: $mpd_bitrate\n" "Progress: $mpd_bar
-$color XMMS2: $xmms2_status $xmms2_artist - $xmms2_title from $xmms2_album
-Progress: $xmms2_bar
+${color grey}playing:$color ${exec mocp -Q %artist} - ${exec mocp -Q %song}
+$hr
 $color Name		PID	CPU%	MEM%
  ${color lightgrey} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
  ${color lightgrey} ${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}
