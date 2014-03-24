@@ -33,3 +33,10 @@ alias reboot="sudo shutdown -r now"
 alias shutdown="sudo shutdown -h now"
 alias crawl="sudo /usr/games/bin/crawl"
 ####################################################################
+
+###### 256 colors #########
+if [ "x$TERM" = "xxterm" ]
+    27 then
+    28         export TERM="xterm-256color"
+    29     fi
+
