@@ -40,3 +40,8 @@ if [ "x$TERM" = "xxterm" ]
     28         export TERM="xterm-256color"
     29     fi
 
+# Java
+export JAVA_HOME=/home/constantine/jdk1.7.0_51
+export PATH=$PATH:/home/constantine/jdk1.7.0_51/bin
+
+
