@@ -1,13 +1,16 @@
+#lawful good
 alignment top_left
 
+#xft fonts
 use_xft yes
-
 xftfont Terminus:size=8
-
 xftalpha 0.8
 
+#refresh delay
 update_interval 2.0
 
+#Minimum size of text area
+#minimum_size 600 5
 
 TEXT
 $nodename - $sysname $kernel on $machine
