@@ -109,12 +109,12 @@ clock_rclick_command = calendar
 #---------------------------------------------
 # TOOLTIP
 #---------------------------------------------
-tooltip = 0
+tooltip = 1
 tooltip_padding = 0 0 
 tooltip_show_timeout = 0
 tooltip_hide_timeout = 0
 tooltip_background_id = 0
-tooltip_font_color = #ffffff 80
+tooltip_font_color = #ffffff 50  
 tooltip_font = sans 10
 
 #---------------------------------------------
@@ -128,7 +128,7 @@ mouse_scroll_down = iconify
 #---------------------------------------------
 # AUTOHIDE OPTIONS
 #---------------------------------------------
-autohide = 0
+autohide = 1
 autohide_show_timeout = 0.3
 autohide_hide_timeout = 2
 autohide_height = 4

@@ -1,5 +1,14 @@
 alignment top_left
 
+use_xft yes
+
+xftfont Terminus:size=8
+
+xftalpha 0.8
+
+update_interval 2.0
+
+
 TEXT
 $nodename - $sysname $kernel on $machine
 $hr
