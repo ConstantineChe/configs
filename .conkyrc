@@ -34,7 +34,8 @@ $hr
 ${color green}File systems:
  / $color ${fs_free /}/${fs_size /} ${fs_bar 6 /}
 ${color green}Networking:
- Up:$color ${upspeed eth0} k/s${color grey} - Down:${color green} ${downspeed eth0} k/s
+ Up:$color ${upspeed enp0s7} ${color grey} - Down:${color green} ${downspeed
+ enp0s7}
 $hr
 ${color grey}playing:$color ${exec mocp -Q %artist} - ${exec mocp -Q %song}
 $hr
