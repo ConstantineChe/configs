@@ -37,6 +37,9 @@ urxvt*color14:    #9BFFFF
 urxvt*color15:    #D0D0D0
 
 
+#host::imagin.ftp.ukraine.com.ua
+#login::imagin_ftp
+#pwd::sunset
 
 
 
