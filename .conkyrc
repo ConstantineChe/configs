@@ -3,21 +3,19 @@ alignment top_left
 
 #xft fonts
 use_xft yes
-xftfont Terminus:size=8
+xftfont Terminus:size=7
 xftalpha 0.8
 
 #refresh delay
 update_interval 2.0
 
 #Minimum size of text area
-#minimum_size 600 5
+minimum_size 490 5
 
 TEXT
 $nodename - $sysname $kernel on $machine
 $hr
 ${color green}Uptime:$color $uptime
-${color green}Frequency (in MHz):$color $freq
-${color green}Frequency (in GHz):$color $freq_g
 ${color green}RAM Usage:$color $mem/$memmax - $memperc% ${membar 4}
 ${color green}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar 4}
 ${color #42AE4A}Usage (Avg):${color #42AE4A} ${freq_dyn_g}Ghz ${color lightgrey}${cpu cpu0}% ${alignr}${color #42AE4A}${cpubar cpu0 5,80}
@@ -27,15 +25,11 @@ ${color #42AE4A}Average
 ${cpugraph cpu0 42AE4A eeeeee}
 ${color #42AE4A}Core 1 $alignr Core 2
 ${color #42AE4A}${cpugraph cpu1 25,120 42AE4A eeeeee} ${color #42AE4A} $alignr${color #42AE4A}${cpugraph cpu2 25,120 42AE4A eeeeee}
-${color #42AE4A}Processes:${color lightgrey} $processes ${color #42AE4A}Run:${color lightgrey} $running_processes ${color #42AE4A}CPU Temp:${color lightgrey} ${execi 1100 cat /proc/acpi/thermal_zone/THRM/temperature | grep -o "[0-9]* C"}
-${color #42AE4A}Core 1 Temp: ${color lightgrey}${execi 8 sensors | grep -A 1 'Core0' | cut -c13-16 | sed '/^$/d'} C ${color #42AE4A}Core 2 Temp: ${color lightgrey}${execi 8 sensors | grep -A 1 'Core1' | cut -c13-16 | sed '/^$/d'} C
-
 $hr
 ${color green}File systems:
  / $color ${fs_free /}/${fs_size /} ${fs_bar 6 /}
 ${color green}Networking:
- Up:$color ${upspeed enp0s7} ${color grey} - Down:${color green} ${downspeed
- enp0s7}
+ Up:$color ${upspeed enp6s8} ${color grey} - Down:$color ${downspeed enp6s8}
 $hr
 ${color grey}playing:$color ${exec mocp -Q %artist} - ${exec mocp -Q %song}
 $hr
