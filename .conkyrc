@@ -1,15 +1,21 @@
-#lawful good
+# lawful good
 alignment top_left
 
-#xft fonts
+# reduses flicker
+double_buffer yes
+
+# no shades please
+draw_shades no
+
+# xft fonts
 use_xft yes
 xftfont Terminus:size=7
 xftalpha 0.8
 
-#refresh delay
+# refresh delay
 update_interval 2.0
 
-#Minimum size of text area
+# Minimum size of text area
 minimum_size 490 5
 
 TEXT
