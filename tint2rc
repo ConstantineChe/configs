@@ -75,7 +75,7 @@ task_urgent_icon_asb = 100 0 0
 #---------------------------------------------
 # SYSTRAYBAR
 #---------------------------------------------
-systray = 0
+systray = 1
 systray_padding = 3 3 3 
 systray_background_id = 0
 systray_sort = ascending
@@ -128,8 +128,8 @@ mouse_scroll_down = iconify
 #---------------------------------------------
 # AUTOHIDE OPTIONS
 #---------------------------------------------
-autohide = 1
-autohide_show_timeout = 0.3
-autohide_hide_timeout = 2
+autohide = 0 
+autohide_show_timeout = 1
+autohide_hide_timeout = 5
 autohide_height = 4
-strut_policy = minimum
+strut_policy = follow_size
