@@ -37,6 +37,9 @@ urxvt*color14:    #9BFFFF
 urxvt*color15:    #D0D0D0
 
 
+
+
+
 URxvt*saveLines: 5000
 #URxvt.font: xft:Clean:size=9
 
@@ -50,10 +53,10 @@ URxvt*scrollBar: false
 
 
 URxvt*background: black
-URxvt*foreground: white
+URxvt*foreground: #C0C0C0
 
 
-URxvt*perl-lib: /home/constantine/.config/urxvt/perl/
+URxvt*perl-lib: /home/coon/.config/urxvt/perl/
 
 
 #clickable urls
@@ -75,17 +78,14 @@ URxvt.tabbed*transparent:true
 URxvt.tabbed.title:true
 URxvt.tabbed.autohide:true
 URxvt.tabbedex*transparent:true
-
-# tabbedex
-*keysym.Control-t: perl:tabbedex:new_tab
-*keysym.Control-Tab: perl:tabbedex:next_tab
+URxvt*keysym.Control-t: perl:tabbedex:new_tab
+URxvt*keysym.Control-Tab: perl:tabbedex:next_tab
 URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
 URxvt.keysym.Control-Shift-Left: perl:tabbex:move_tab_left
 URxvt.keysym.Control-Shift-Right: perl:tabbex:move_tab_right
 URxvt.keysym.Control-Shift-R: perl:tabbex:rename_tab
 
-
-
+# clipboard
 URxvt.keysym.M-c:   perl:clipboard:copy
 URxvt.keysym.M-v:   perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
