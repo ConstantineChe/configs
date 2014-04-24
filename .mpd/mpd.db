@@ -1,0 +1,1472 @@
+info_begin
+format: 1
+mpd_version: 0.18.10
+fs_charset: UTF-8
+tag: Artist
+tag: ArtistSort
+tag: Album
+tag: AlbumArtist
+tag: AlbumArtistSort
+tag: Title
+tag: Track
+tag: Name
+tag: Genre
+tag: Date
+tag: Composer
+tag: Performer
+tag: Disc
+tag: MUSICBRAINZ_ARTISTID
+tag: MUSICBRAINZ_ALBUMID
+tag: MUSICBRAINZ_ALBUMARTISTID
+tag: MUSICBRAINZ_TRACKID
+info_end
+directory: R.Roo - Broken Time (2011)
+mtime: 1398337125
+begin: R.Roo - Broken Time (2011)
+song_begin: 01. intr.roo.mp3
+Time: 98
+Artist: r.roo
+AlbumArtist: r.roo
+Title: Intr.roo
+Album: Broken Time
+Track: 1
+Date: 2011
+Genre: idm
+Composer: r.roo
+Disc: raum-cd-08
+mtime: 1398337107
+song_end
+song_begin: 02. drain myself.mp3
+Time: 361
+Artist: r.roo
+AlbumArtist: r.roo
+Title: Drain Myself
+Album: Broken Time
+Track: 2
+Date: 2011
+Genre: idm
+Composer: r.roo
+Disc: raum-cd-08
+mtime: 1398337105
+song_end
+song_begin: 03. a broken clock.mp3
+Time: 295
+Artist: r.roo
+AlbumArtist: r.roo
+Title: A Broken Clock
+Album: Broken Time
+Track: 3
+Date: 2011
+Genre: idm
+Composer: r.roo
+Disc: raum-cd-08
+mtime: 1398337123
+song_end
+song_begin: 04. he swallowed rays of the sun.mp3
+Time: 320
+Artist: r.roo
+AlbumArtist: r.roo
+Title: He Swallowed Rays Of The Sun
+Album: Broken Time
+Track: 4
+Date: 2011
+Genre: idm
+Composer: r.roo
+Disc: raum-cd-08
+mtime: 1398337109
+song_end
+song_begin: 05. her movie.mp3
+Time: 346
+Artist: r.roo
+AlbumArtist: r.roo
+Title: Her Movie
+Album: Broken Time
+Track: 5
+Date: 2011
+Genre: idm
+Composer: r.roo
+Disc: raum-cd-08
+mtime: 1398337115
+song_end
+song_begin: 06. my rue.mp3
+Time: 327
+Artist: r.roo
+AlbumArtist: r.roo
+Title: My Rue
+Album: Broken Time
+Track: 6
+Date: 2011
+Genre: idm
+Composer: r.roo
+Disc: raum-cd-08
+mtime: 1398337093
+song_end
+song_begin: 07. sagte er, es war, als sollte die scham ihn uberleben..mp3
+Time: 294
+Artist: r.roo
+AlbumArtist: r.roo
+Title: Sagte Er, Es War, Als Sollte Die Scham Ihn Uberleben
+Album: Broken Time
+Track: 7
+Date: 2011
+Genre: idm
+Composer: r.roo
+Disc: raum-cd-08
+mtime: 1398337114
+song_end
+song_begin: 08. laugh in her broken eyes.mp3
+Time: 299
+Artist: r.roo
+AlbumArtist: r.roo
+Title: Laugh In Her Broken Eyes
+Album: Broken Time
+Track: 8
+Date: 2011
+Genre: idm
+Composer: r.roo
+Disc: raum-cd-08
+mtime: 1398337102
+song_end
+song_begin: 09. b-movie (instrumental).mp3
+Time: 295
+Artist: r.roo
+AlbumArtist: r.roo
+Title: B-Movie (Instrumental)
+Album: Broken Time
+Track: 9
+Date: 2011
+Genre: idm
+Composer: r.roo
+Disc: raum-cd-08
+mtime: 1398337116
+song_end
+song_begin: 10. my bridge is too small.mp3
+Time: 373
+Artist: r.roo
+AlbumArtist: r.roo
+Title: My Bridge Is To Small
+Album: Broken Time
+Track: 10
+Date: 2011
+Genre: idm
+Composer: r.roo
+Disc: raum-cd-08
+mtime: 1398337125
+song_end
+song_begin: 11. I think, therefore I am.mp3
+Time: 283
+Artist: r.roo
+AlbumArtist: r.roo
+Title: I Think Therefore I Am
+Album: Broken Time
+Track: 11
+Date: 2011
+Genre: idm
+Composer: r.roo
+Disc: raum-cd-08
+mtime: 1398337109
+song_end
+song_begin: 12. fireflies.mp3
+Time: 274
+Artist: r.roo
+AlbumArtist: r.roo
+Title: Fireflies
+Album: Broken Time
+Track: 12
+Date: 2011
+Genre: idm
+Composer: r.roo
+Disc: raum-cd-08
+mtime: 1398337125
+song_end
+song_begin: 13. laugh in her broken eyes (Tapage remix).mp3
+Time: 243
+Artist: r.roo
+AlbumArtist: r.roo
+Title: Laugh In Her Broken Eyes (Tapage Remix)
+Album: Broken Time
+Track: 13
+Date: 2011
+Genre: idm
+Composer: r.roo
+Disc: raum-cd-08
+mtime: 1398337125
+song_end
+song_begin: 14. we play the search. you understand me.mp3
+Time: 213
+Artist: r.roo
+AlbumArtist: r.roo
+Title: We Play The Search You Understand Me
+Album: Broken Time
+Track: 14
+Date: 2011
+Genre: idm
+Composer: r.roo
+Disc: raum-cd-08
+mtime: 1398337086
+song_end
+song_begin: 15. her movie (Cloud Roots remix).mp3
+Time: 430
+Artist: r.roo
+AlbumArtist: r.roo
+Title: Her Movie (Cloud Roots Remix)
+Album: Broken Time
+Track: 15
+Date: 2011
+Genre: idm
+Composer: r.roo
+Disc: raum-cd-08
+mtime: 1398337124
+song_end
+song_begin: 16. outr.roo.mp3
+Time: 86
+Artist: r.roo
+AlbumArtist: r.roo
+Title: Outr.roo
+Album: Broken Time
+Track: 16
+Date: 2011
+Genre: idm
+Composer: r.roo
+Disc: raum-cd-08
+mtime: 1398337049
+song_end
+end: R.Roo - Broken Time (2011)
+directory: Zola Jesus
+mtime: 1398336111
+begin: Zola Jesus
+directory: !Releases
+mtime: 1398336114
+begin: Zola Jesus/!Releases
+directory: 2008 - Poor Sons EP 7''
+mtime: 1398336311
+begin: Zola Jesus/!Releases/2008 - Poor Sons EP 7''
+song_begin: A1 Poor Sons.mp3
+Time: 105
+Artist: Zola Jesus
+Title: Poor Sons
+Album: Poor Sons [Single]
+Track: 1
+Date: 2008
+Genre: Experimental
+mtime: 1398336292
+song_end
+song_begin: A2 The Way.mp3
+Time: 216
+Artist: Zola Jesus
+Title: The Way
+Album: Poor Sons [Single]
+Track: 2
+Date: 2008
+Genre: Experimental
+mtime: 1398336262
+song_end
+song_begin: B Dog.mp3
+Time: 251
+Artist: Zola Jesus
+Title: Dog
+Album: Poor Sons [Single]
+Track: 3
+Date: 2008
+Genre: Experimental
+mtime: 1398336311
+song_end
+end: Zola Jesus/!Releases/2008 - Poor Sons EP 7''
+directory: 2008 - Soeur Sewer 7'' [Sacred Bones]
+mtime: 1398336309
+begin: Zola Jesus/!Releases/2008 - Soeur Sewer 7'' [Sacred Bones]
+song_begin: Side A - Soeur Sewer.mp3
+Time: 236
+Artist: Zola Jesus
+AlbumArtist: Zola Jesus
+Title: Soeur Sewer
+Album: Soeur Sewer
+Track: 01
+Date: 2008
+Genre: Rock
+mtime: 1398336308
+song_end
+song_begin: Side B - Odessa.mp3
+Time: 235
+Artist: Zola Jesus
+AlbumArtist: Zola Jesus
+Title: Odessa
+Album: Soeur Sewer
+Track: 02
+Date: 2008
+Genre: Rock
+mtime: 1398336309
+song_end
+end: Zola Jesus/!Releases/2008 - Soeur Sewer 7'' [Sacred Bones]
+directory: 2009 - New Amsterdam [Sacred Bones]
+mtime: 1398336331
+begin: Zola Jesus/!Releases/2009 - New Amsterdam [Sacred Bones]
+song_begin: 01. Odessa.mp3
+Time: 247
+Artist: Zola Jesus
+Title: Odessa
+Album: New Amsterdam
+Track: 01/10
+Date: 2009
+Genre: Noise pop
+Composer: Zola Jesus
+mtime: 1398336105
+song_end
+song_begin: 02. Dog.mp3
+Time: 263
+Artist: Zola Jesus
+Title: Dog
+Album: New Amsterdam
+Track: 02/10
+Date: 2009
+Genre: Noise Pop
+mtime: 1398336316
+song_end
+song_begin: 03. Orthodox.mp3
+Time: 274
+Artist: Zola Jesus
+Title: Orthodox
+Album: New Amsterdam
+Track: 03/10
+Date: 2009
+Genre: Noise Pop
+mtime: 1398336318
+song_end
+song_begin: 04. Last Day.mp3
+Time: 268
+Artist: Zola Jesus
+Title: Last Day
+Album: New Amsterdam
+Track: 04/10
+Date: 2009
+Genre: Noise Pop
+mtime: 1398336260
+song_end
+song_begin: 05. New Amsterdam.mp3
+Time: 193
+Artist: Zola Jesus
+Title: New Amsterdam
+Album: New Amsterdam
+Track: 05/10
+Date: 2009
+Genre: Noise Pop
+mtime: 1398336331
+song_end
+song_begin: 06. Lady Maslenitsa.mp3
+Time: 242
+Artist: Zola Jesus
+Title: Lady Maslenitsa
+Album: New Amsterdam
+Track: 06/10
+Date: 2009
+Genre: Noise Pop
+mtime: 1398336311
+song_end
+song_begin: 07. Nativity.mp3
+Time: 180
+Artist: Zola Jesus
+Title: Nativity
+Album: New Amsterdam
+Track: 07/10
+Date: 2009
+Genre: Noise Pop
+mtime: 1398336320
+song_end
+song_begin: 08. Little Girl.mp3
+Time: 82
+Artist: Zola Jesus
+Title: Little Girl
+Album: New Amsterdam
+Track: 08/10
+Date: 2009
+Genre: Noise Pop
+mtime: 1398336276
+song_end
+song_begin: 09. Be Your Virgin.mp3
+Time: 101
+Artist: Zola Jesus
+Title: Be Your Virgin
+Album: New Amsterdam
+Track: 09/10
+Date: 2009
+Genre: Noise Pop
+mtime: 1398336228
+song_end
+song_begin: 10. Lady In The Radiator.mp3
+Time: 138
+Artist: Zola Jesus
+Title: Lady In The Radiator
+Album: New Amsterdam
+Track: 10/10
+Date: 2009
+Genre: Noise Pop
+mtime: 1398336275
+song_end
+end: Zola Jesus/!Releases/2009 - New Amsterdam [Sacred Bones]
+directory: 2009 - Split with Burial Hex
+mtime: 1398336329
+begin: Zola Jesus/!Releases/2009 - Split with Burial Hex
+song_begin: A1 Burial Hex - Go crystal tears.mp3
+Time: 286
+Artist: Burial Hex
+Title: Go Crystal Tears
+Album: Split Vinyl
+Track: 1
+Date: 2009
+Genre: Lo-Fi
+mtime: 1398336329
+song_end
+song_begin: A2  Burial Hex - Temple of the flood.mp3
+Time: 866
+Artist: Burial Hex
+Title: Temple of the Flood
+Album: Split Vinyl
+Track: 2
+Date: 2009
+Genre: Lo-Fi
+mtime: 1398336317
+song_end
+song_begin: B1. Zola Jesus - Julius & Ethel.mp3
+Time: 1170
+Artist: Zola Jesus
+Title: Julius & Ethel
+Album: Split Vinyl
+Track: 3
+Date: 2009
+Genre: Lo-Fi
+mtime: 1398336311
+song_end
+end: Zola Jesus/!Releases/2009 - Split with Burial Hex
+directory: 2009 - The spoils [SBR-022CD]
+mtime: 1398336369
+begin: Zola Jesus/!Releases/2009 - The spoils [SBR-022CD]
+song_begin: 01. Six Feet (From My Baby).mp3
+Time: 256
+Artist: Zola Jesus
+Title: Six Feet (From My Baby)
+Album: The Spoils
+Track: 1/15
+Date: 2009
+Genre: Alternative
+mtime: 1398336330
+song_end
+song_begin: 02. Crowns.mp3
+Time: 175
+Artist: Zola Jesus
+Title: Crowns
+Album: The Spoils
+Track: 2/15
+Date: 2009
+Genre: Alternative
+mtime: 1398336368
+song_end
+song_begin: 03. Sinfonia And The Shrew.mp3
+Time: 128
+Artist: Zola Jesus
+Title: Sinfonia And The Shrew
+Album: The Spoils
+Track: 3/15
+Date: 2009
+Genre: Alternative
+mtime: 1398336343
+song_end
+song_begin: 04. Sink The Dynasty.mp3
+Time: 200
+Artist: Zola Jesus
+Title: Sink The Dynasty
+Album: The Spoils
+Track: 4/15
+Date: 2009
+Genre: Alternative
+mtime: 1398336329
+song_end
+song_begin: 05. Devil Take You.mp3
+Time: 232
+Artist: Zola Jesus
+Title: Devil Take You
+Album: The Spoils
+Track: 5/15
+Date: 2009
+Genre: Alternative
+mtime: 1398336334
+song_end
+song_begin: 06. Lullaby In Tongues.mp3
+Time: 76
+Artist: Zola Jesus
+Title: Lullaby In Tongues
+Album: The Spoils
+Track: 6/15
+Date: 2009
+Genre: Alternative
+mtime: 1398336190
+song_end
+song_begin: 07. Smirenye.mp3
+Time: 228
+Artist: Zola Jesus
+Title: Smirenye
+Album: The Spoils
+Track: 7/15
+Date: 2009
+Genre: Alternative
+mtime: 1398336343
+song_end
+song_begin: 08. Clay Bodies.mp3
+Time: 295
+Artist: Zola Jesus
+Title: Clay Bodies
+Album: The Spoils
+Track: 8/15
+Date: 2009
+Genre: Alternative
+mtime: 1398336364
+song_end
+song_begin: 09. In Hiding From The Crow.mp3
+Time: 120
+Artist: Zola Jesus
+Title: In Hiding From The Crow
+Album: The Spoils
+Track: 9/15
+Date: 2009
+Genre: Alternative
+mtime: 1398336266
+song_end
+song_begin: 10. Tell It To The Willow.mp3
+Time: 275
+Artist: Zola Jesus
+Title: Tell It To The Willow
+Album: The Spoils
+Track: 10/15
+Date: 2009
+Genre: Alternative
+mtime: 1398336364
+song_end
+song_begin: 11. Soeur Sewer.mp3
+Time: 236
+Artist: Zola Jesus
+Title: Soeur Sewer
+Album: The Spoils
+Track: 11/15
+Date: 2009
+Genre: Alternative
+mtime: 1398336324
+song_end
+song_begin: 12. Odessa.mp3
+Time: 233
+Artist: Zola Jesus
+Title: Odessa
+Album: The Spoils
+Track: 12/15
+Date: 2009
+Genre: Alternative
+mtime: 1398336326
+song_end
+song_begin: 13. Poor Sons.mp3
+Time: 109
+Artist: Zola Jesus
+Title: Poor Sons
+Album: The Spoils
+Track: 13/15
+Date: 2009
+Genre: Alternative
+mtime: 1398336310
+song_end
+song_begin: 14. The Way.mp3
+Time: 221
+Artist: Zola Jesus
+Title: The Way
+Album: The Spoils
+Track: 14/15
+Date: 2009
+Genre: Alternative
+mtime: 1398336282
+song_end
+song_begin: 15. Dog.mp3
+Time: 252
+Artist: Zola Jesus
+Title: Dog
+Album: The Spoils
+Track: 15/15
+Date: 2009
+Genre: Alternative
+mtime: 1398336350
+song_end
+end: Zola Jesus/!Releases/2009 - The spoils [SBR-022CD]
+directory: 2009 - Tsar Bomba EP
+mtime: 1398336320
+begin: Zola Jesus/!Releases/2009 - Tsar Bomba EP
+song_begin: A1 Said The White Rabbit.mp3
+Time: 151
+Artist: Zola Jesus
+AlbumArtist: Zola Jesus
+Title: Said The White Rabbit
+Album: Tsar Bomba [EP]
+Track: 01
+Date: 2009
+Genre: Noise Pop
+mtime: 1398336273
+song_end
+song_begin: A2 Last Day.mp3
+Time: 69
+Artist: Zola Jesus
+AlbumArtist: Zola Jesus
+Title: Last Day
+Album: Tsar Bomba [EP]
+Track: 02
+Date: 2009
+Genre: Noise Pop
+mtime: 1398336169
+song_end
+song_begin: A3 Rester.mp3
+Time: 256
+Artist: Zola Jesus
+AlbumArtist: Zola Jesus
+Title: Rester
+Album: Tsar Bomba [EP]
+Track: 03
+Date: 2009
+Genre: Noise Pop
+mtime: 1398336315
+song_end
+song_begin: B1 Th'aria.mp3
+Time: 124
+Artist: Zola Jesus
+AlbumArtist: Zola Jesus
+Title: Th'aria
+Album: Tsar Bomba [EP]
+Track: 04
+Date: 2009
+Genre: Noise Pop
+mtime: 1398336225
+song_end
+song_begin: B2 Sea Talk.mp3
+Time: 258
+Artist: Zola Jesus
+AlbumArtist: Zola Jesus
+Title: Sea Talk
+Album: Tsar Bomba [EP]
+Track: 05
+Date: 2009
+Genre: Noise Pop
+mtime: 1398336320
+song_end
+song_begin: B3 Flesh.mp3
+Time: 153
+Artist: Zola Jesus
+AlbumArtist: Zola Jesus
+Title: Flesh
+Album: Tsar Bomba [EP]
+Track: 06
+Date: 2009
+Genre: Noise Pop
+mtime: 1398336298
+song_end
+song_begin: B4 Past The Blue Brick Stone.mp3
+Time: 168
+Artist: Zola Jesus
+AlbumArtist: Zola Jesus
+Title: Past The Blue Brick Stone
+Album: Tsar Bomba [EP]
+Track: 07
+Date: 2009
+Genre: Noise Pop
+mtime: 1398336236
+song_end
+end: Zola Jesus/!Releases/2009 - Tsar Bomba EP
+directory: 2010 - LA Vampires and Zola Jesus - LA Vampires Meets Zola Jesus [Not Not Fun]
+mtime: 1398336334
+begin: Zola Jesus/!Releases/2010 - LA Vampires and Zola Jesus - LA Vampires Meets Zola Jesus [Not Not Fun]
+song_begin: 01 Bone is bloodstone.mp3
+Time: 206
+Artist: LA Vampires & Zola Jesus
+Title: Bone Is Bloodstone
+Album: LA Vampires meets Zola Jesus
+Track: 1/7
+Date: 2010-00-00
+Genre: Psychedelic
+mtime: 1398336334
+song_end
+song_begin: 02 In the desert.mp3
+Time: 141
+Artist: LA Vampires & Zola Jesus
+Title: In The Desert
+Album: LA Vampires meets Zola Jesus
+Track: 2/7
+Date: 2010-00-00
+Genre: Psychedelic
+mtime: 1398336301
+song_end
+song_begin: 03 Searching.mp3
+Time: 177
+Artist: LA Vampires & Zola Jesus
+Title: Searching
+Album: LA Vampires meets Zola Jesus
+Track: 3/7
+Date: 2010-00-00
+Genre: Psychedelic
+mtime: 1398336323
+song_end
+song_begin: 04 Vous.mp3
+Time: 235
+Artist: LA Vampires & Zola Jesus
+Title: Vous
+Album: LA Vampires meets Zola Jesus
+Track: 4/7
+Date: 2010-00-00
+Genre: Psychedelic
+mtime: 1398336327
+song_end
+song_begin: 05 Looking in.mp3
+Time: 236
+Artist: LA Vampires & Zola Jesus
+Title: Looking In
+Album: LA Vampires meets Zola Jesus
+Track: 5/7
+Date: 2010-00-00
+Genre: Psychedelic
+mtime: 1398336303
+song_end
+song_begin: 06 Eulogy.mp3
+Time: 211
+Artist: LA Vampires & Zola Jesus
+Title: Eulogy
+Album: LA Vampires meets Zola Jesus
+Track: 6/7
+Date: 2010-00-00
+Genre: Psychedelic
+mtime: 1398336240
+song_end
+song_begin: 07 No no no.mp3
+Time: 263
+Artist: LA Vampires & Zola Jesus
+Title: No No No
+Album: LA Vampires meets Zola Jesus
+Track: 7/7
+Date: 2010-00-00
+Genre: Psychedelic
+mtime: 1398336330
+song_end
+end: Zola Jesus/!Releases/2010 - LA Vampires and Zola Jesus - LA Vampires Meets Zola Jesus [Not Not Fun]
+directory: 2010 - Poor animal EP 7''
+mtime: 1398336344
+begin: Zola Jesus/!Releases/2010 - Poor animal EP 7''
+song_begin: 01 - poor animal.mp3
+Time: 268
+Artist: Zola Jesus
+Title: Poor Animal
+Album: Poor Animal / I Can't Stand It 7"
+Track: 1/2
+Date: 2010
+Genre: Pop
+mtime: 1398336303
+song_end
+song_begin: 02 - i can't stand.mp3
+Time: 252
+Artist: Zola Jesus
+Title: I Can't Stand
+Album: Poor Animal / I Can't Stand It 7"
+Track: 2/2
+Date: 2010
+Genre: Pop
+mtime: 1398336344
+song_end
+end: Zola Jesus/!Releases/2010 - Poor animal EP 7''
+directory: 2010 - Stridulum EP
+mtime: 1398336329
+begin: Zola Jesus/!Releases/2010 - Stridulum EP
+song_begin: 01 Night.mp3
+Time: 217
+Artist: Zola Jesus
+Title: Night
+Album: Stridulum EP
+Track: 01
+Date: 2010
+Genre: Electronic
+mtime: 1398336264
+song_end
+song_begin: 02 Trust Me.mp3
+Time: 121
+Artist: Zola Jesus
+Title: Trust Me
+Album: Stridulum EP
+Track: 02
+Date: 2010
+Genre: Electronic
+mtime: 1398336293
+song_end
+song_begin: 03 I Can't Stand.mp3
+Time: 251
+Artist: Zola Jesus
+Title: I Can't Stand
+Album: Stridulum EP
+Track: 03
+Date: 2010
+Genre: Electronic
+mtime: 1398336329
+song_end
+song_begin: 04 Stridulum.mp3
+Time: 262
+Artist: Zola Jesus
+Title: Stridulum
+Album: Stridulum EP
+Track: 04
+Date: 2010
+Genre: Electronic
+mtime: 1398336322
+song_end
+song_begin: 05 Run Me Out.mp3
+Time: 199
+Artist: Zola Jesus
+Title: Run Me Out
+Album: Stridulum EP
+Track: 05
+Date: 2010
+Genre: Electronic
+mtime: 1398336232
+song_end
+song_begin: 06 Manifest Destiny.mp3
+Time: 196
+Artist: Zola Jesus
+Title: Manifest Destiny
+Album: Stridulum EP
+Track: 06
+Date: 2010
+Genre: Electronic
+mtime: 1398336302
+song_end
+end: Zola Jesus/!Releases/2010 - Stridulum EP
+directory: 2010 - Stridulum II
+mtime: 1398336374
+begin: Zola Jesus/!Releases/2010 - Stridulum II
+song_begin: 01 Night.mp3
+Time: 220
+Artist: Zola Jesus
+Title: Night
+Album: Stridulum II
+Track: 1/9
+Date: 2010
+Genre: Alternative & Punk
+Composer: Zola Jesus
+mtime: 1398336369
+song_end
+song_begin: 02 Trust Me.mp3
+Time: 124
+Artist: Zola Jesus
+Title: Trust Me
+Album: Stridulum II
+Track: 2/9
+Date: 2010
+Genre: Alternative & Punk
+Composer: Zola Jesus
+mtime: 1398336374
+song_end
+song_begin: 03 I Can't Stand.mp3
+Time: 254
+Artist: Zola Jesus
+Title: I Can't Stand
+Album: Stridulum II
+Track: 3/9
+Date: 2010
+Genre: Alternative & Punk
+Composer: Zola Jesus
+mtime: 1398336369
+song_end
+song_begin: 04 Stridulum.mp3
+Time: 262
+Artist: Zola Jesus
+Title: Stridulum
+Album: Stridulum II
+Track: 4/9
+Date: 2010
+Genre: Alternative & Punk
+Composer: Zola Jesus
+mtime: 1398336360
+song_end
+song_begin: 05 Run Me Out.mp3
+Time: 201
+Artist: Zola Jesus
+Title: Run Me Out
+Album: Stridulum II
+Track: 5/9
+Date: 2010
+Genre: Alternative & Punk
+Composer: Zola Jesus
+mtime: 1398336369
+song_end
+song_begin: 06 Manifest Destiny.mp3
+Time: 201
+Artist: Zola Jesus
+Title: Manifest Destiny
+Album: Stridulum II
+Track: 6/9
+Date: 2010
+Genre: Alternative & Punk
+Composer: Zola Jesus
+mtime: 1398336369
+song_end
+song_begin: 07 Tower.mp3
+Time: 241
+Artist: Zola Jesus
+Title: Tower
+Album: Stridulum II
+Track: 7/9
+Date: 2010
+Genre: Alternative & Punk
+Composer: Zola Jesus
+mtime: 1398336370
+song_end
+song_begin: 08 Sea Talk.mp3
+Time: 305
+Artist: Zola Jesus
+Title: Sea Talk
+Album: Stridulum II
+Track: 8/9
+Date: 2010
+Genre: Alternative & Punk
+Composer: Zola Jesus
+mtime: 1398336365
+song_end
+song_begin: 09 Lightsick.mp3
+Time: 252
+Artist: Zola Jesus
+Title: Lightsick
+Album: Stridulum II
+Track: 9/9
+Date: 2010
+Genre: Alternative & Punk
+Composer: Zola Jesus
+mtime: 1398336365
+song_end
+end: Zola Jesus/!Releases/2010 - Stridulum II
+directory: 2010 - Valusia EP
+mtime: 1398336324
+begin: Zola Jesus/!Releases/2010 - Valusia EP
+song_begin: 01 Poor Animal.mp3
+Time: 267
+Artist: Zola Jesus
+AlbumArtist: Zola Jesus
+Title: Poor Animal
+Album: Valusia - EP
+Track: 1/4
+Date: 2010
+Genre: Alternative
+Disc: 1/1
+mtime: 1398336320
+song_end
+song_begin: 02 Tower.mp3
+Time: 238
+Artist: Zola Jesus
+AlbumArtist: Zola Jesus
+Title: Tower
+Album: Valusia - EP
+Track: 2/4
+Date: 2010
+Genre: Alternative
+Disc: 1/1
+mtime: 1398336305
+song_end
+song_begin: 03 Sea Talk.mp3
+Time: 303
+Artist: Zola Jesus
+AlbumArtist: Zola Jesus
+Title: Sea Talk
+Album: Valusia - EP
+Track: 3/4
+Date: 2010
+Genre: Alternative
+Disc: 1/1
+mtime: 1398336323
+song_end
+song_begin: 04 Lightsick.mp3
+Time: 251
+Artist: Zola Jesus
+AlbumArtist: Zola Jesus
+Title: Lightsick
+Album: Valusia - EP
+Track: 4/4
+Date: 2010
+Genre: Alternative
+Disc: 1/1
+mtime: 1398336302
+song_end
+end: Zola Jesus/!Releases/2010 - Valusia EP
+directory: 2011 - Conatus
+mtime: 1398336376
+begin: Zola Jesus/!Releases/2011 - Conatus
+song_begin: 01 Swords.mp3
+Time: 64
+Artist: Zola Jesus
+Title: Swords
+Album: Conatus
+Track: 1/11
+Date: 2011
+Genre: Alternative & Punk
+Composer: Nika Roza Danilova
+Disc: 1/1
+mtime: 1398336338
+song_end
+song_begin: 02 Avalanche.mp3
+Time: 201
+Artist: Zola Jesus
+Title: Avalanche
+Album: Conatus
+Track: 2/11
+Date: 2011
+Genre: Alternative & Punk
+Composer: Nika Roza Danilova
+Disc: 1/1
+mtime: 1398336371
+song_end
+song_begin: 03 Vessel.mp3
+Time: 282
+Artist: Zola Jesus
+Title: Vessel
+Album: Conatus
+Track: 3/11
+Date: 2011
+Genre: Alternative & Punk
+Composer: Nika Roza Danilova
+Disc: 1/1
+mtime: 1398336372
+song_end
+song_begin: 04 Hikikomori.mp3
+Time: 228
+Artist: Zola Jesus
+Title: Hikikomori
+Album: Conatus
+Track: 4/11
+Date: 2011
+Genre: Alternative & Punk
+Composer: Nika Roza Danilova
+Disc: 1/1
+mtime: 1398336376
+song_end
+song_begin: 05 Ixode.mp3
+Time: 254
+Artist: Zola Jesus
+Title: Ixode
+Album: Conatus
+Track: 5/11
+Date: 2011
+Genre: Alternative & Punk
+Composer: Nika Roza Danilova
+Disc: 1/1
+mtime: 1398336372
+song_end
+song_begin: 06 Seekir.mp3
+Time: 225
+Artist: Zola Jesus
+Title: Seekir
+Album: Conatus
+Track: 6/11
+Date: 2011
+Genre: Alternative & Punk
+Composer: Nika Roza Danilova
+Disc: 1/1
+mtime: 1398336373
+song_end
+song_begin: 07 In Your Nature.mp3
+Time: 208
+Artist: Zola Jesus
+Title: In Your Nature
+Album: Conatus
+Track: 7/11
+Date: 2011
+Genre: Alternative & Punk
+Composer: Nika Roza Danilova
+Disc: 1/1
+mtime: 1398336372
+song_end
+song_begin: 08 Lick The Palm Of The Burning Handshake.mp3
+Time: 267
+Artist: Zola Jesus
+Title: Lick The Palm Of The Burning Handshake
+Album: Conatus
+Track: 8/11
+Date: 2011
+Genre: Alternative & Punk
+Composer: Nika Roza Danilova
+Disc: 1/1
+mtime: 1398336359
+song_end
+song_begin: 09 Shivers.mp3
+Time: 174
+Artist: Zola Jesus
+Title: Shivers
+Album: Conatus
+Track: 9/11
+Date: 2011
+Genre: Alternative & Punk
+Composer: Nika Roza Danilova
+Disc: 1/1
+mtime: 1398336369
+song_end
+song_begin: 10 Skin.mp3
+Time: 262
+Artist: Zola Jesus
+Title: Skin
+Album: Conatus
+Track: 10/11
+Date: 2011
+Genre: Alternative & Punk
+Composer: Nika Roza Danilova
+Disc: 1/1
+mtime: 1398336376
+song_end
+song_begin: 11 Collapse.mp3
+Time: 248
+Artist: Zola Jesus
+Title: Collapse
+Album: Conatus
+Track: 11/11
+Date: 2011
+Genre: Alternative & Punk
+Composer: Nika Roza Danilova
+Disc: 1/1
+mtime: 1398336367
+song_end
+end: Zola Jesus/!Releases/2011 - Conatus
+end: Zola Jesus/!Releases
+directory: Appears On
+mtime: 1398336097
+begin: Zola Jesus/Appears On
+directory: 2009 - Absinthe Minds - The Song Of Returning Light
+mtime: 1398336321
+begin: Zola Jesus/Appears On/2009 - Absinthe Minds - The Song Of Returning Light
+song_begin: A3 Untitled (Voice - Zola Jesus).mp3
+Time: 618
+Artist: Absinthe Minds
+AlbumArtist: Absinthe Minds
+Title: The Song Of Returning Light 3
+Album: The Song Of Returning Light
+Track: 3
+Date: 2009
+Genre: Experimental
+mtime: 1398336321
+song_end
+end: Zola Jesus/Appears On/2009 - Absinthe Minds - The Song Of Returning Light
+end: Zola Jesus/Appears On
+directory: Bonus
+mtime: 1398336326
+begin: Zola Jesus/Bonus
+directory: 2009 - Former Ghosts - Fleurs
+mtime: 1398336286
+begin: Zola Jesus/Bonus/2009 - Former Ghosts - Fleurs
+song_begin: 01 Us And Now.mp3
+Time: 206
+Artist: Former Ghosts
+Title: Us And Now
+Album: Fleurs
+Track: 1
+Date: 2009
+Genre: This Song Is A Mess But So Am I + Xiu Xiu + Zola Jesus
+mtime: 1398336269
+song_end
+song_begin: 02 Hold On.mp3
+Time: 269
+Artist: Former Ghosts
+Title: Hold On
+Album: Fleurs
+Track: 2
+Date: 2009
+Genre: This Song Is A Mess But So Am I + Xiu Xiu + Zola Jesus
+mtime: 1398336267
+song_end
+song_begin: 03 Mother.mp3
+Time: 245
+Artist: Former Ghosts
+Title: Mother
+Album: Fleurs
+Track: 3
+Date: 2009
+Genre: This Song Is A Mess But So Am I + Xiu Xiu + Zola Jesus
+mtime: 1398336250
+song_end
+song_begin: 04 Choices.mp3
+Time: 262
+Artist: Former Ghosts
+Title: Choices
+Album: Fleurs
+Track: 4
+Date: 2009
+Genre: This Song Is A Mess But So Am I + Xiu Xiu + Zola Jesus
+mtime: 1398336276
+song_end
+song_begin: 05 In Earth's Palm.mp3
+Time: 222
+Artist: Former Ghosts
+Title: In Earth's Palm
+Album: Fleurs
+Track: 5
+Date: 2009
+Genre: This Song Is A Mess But So Am I + Xiu Xiu + Zola Jesus
+mtime: 1398336286
+song_end
+song_begin: 06 I Wave.mp3
+Time: 232
+Artist: Former Ghosts
+Title: I Wave
+Album: Fleurs
+Track: 6
+Date: 2009
+Genre: This Song Is A Mess But So Am I + Xiu Xiu + Zola Jesus
+mtime: 1398336261
+song_end
+song_begin: 07 Dreams.mp3
+Time: 266
+Artist: Former Ghosts
+Title: Dreams
+Album: Fleurs
+Track: 7
+Date: 2009
+Genre: This Song Is A Mess But So Am I + Xiu Xiu + Zola Jesus
+mtime: 1398336280
+song_end
+song_begin: 08 Unfolding.mp3
+Time: 192
+Artist: Former Ghosts
+Title: Unfolding
+Album: Fleurs
+Track: 8
+Date: 2009
+Genre: This Song Is A Mess But So Am I + Xiu Xiu + Zola Jesus
+mtime: 1398336274
+song_end
+song_begin: 09 Flowers.mp3
+Time: 206
+Artist: Former Ghosts
+Title: Flowers
+Album: Fleurs
+Track: 9
+Date: 2009
+Genre: This Song Is A Mess But So Am I + Xiu Xiu + Zola Jesus
+mtime: 1398336273
+song_end
+song_begin: 10 The Bull And The Ram.mp3
+Time: 336
+Artist: Former Ghosts
+Title: The Bull And The Ram
+Album: Fleurs
+Track: 10
+Date: 2009
+Genre: This Song Is A Mess But So Am I + Xiu Xiu + Zola Jesus
+mtime: 1398336279
+song_end
+song_begin: 11 Hello Again.mp3
+Time: 211
+Artist: Former Ghosts
+Title: Hello Again
+Album: Fleurs
+Track: 11
+Date: 2009
+Genre: This Song Is A Mess But So Am I + Xiu Xiu + Zola Jesus
+mtime: 1398336244
+song_end
+song_begin: 12 This Is My Last Goodbye.mp3
+Time: 203
+Artist: Former Ghosts
+Title: This Is My Last Goodbye
+Album: Fleurs
+Track: 12
+Date: 2009
+Genre: This Song Is A Mess But So Am I + Xiu Xiu + Zola Jesus
+mtime: 1398336273
+song_end
+end: Zola Jesus/Bonus/2009 - Former Ghosts - Fleurs
+song_begin: Prefuse 73 Zola Jesus Mix Pt 1.The Misanthrope Mediation.mp3
+Time: 2415
+mtime: 1398336326
+song_end
+end: Zola Jesus/Bonus
+directory: Tracks Appear On
+mtime: 1398336105
+begin: Zola Jesus/Tracks Appear On
+directory: Various - My Estrogeneration
+mtime: 1398336278
+begin: Zola Jesus/Tracks Appear On/Various - My Estrogeneration
+song_begin: A1 Zola Jesus - Heaven Sold You Back to Earth.mp3
+Time: 172
+Artist: Zola Jesus
+Title: Heaven Sold You Back To Earth
+Album: My Estrogeneration
+Date: 2008
+Composer: Niki H
+mtime: 1398336278
+song_end
+end: Zola Jesus/Tracks Appear On/Various - My Estrogeneration
+end: Zola Jesus/Tracks Appear On
+end: Zola Jesus
+directory: r.roo - 2013, exist [320]
+mtime: 1398337430
+begin: r.roo - 2013, exist [320]
+song_begin: 01. pustota.mp3
+Time: 470
+Artist: r.roo
+Title: pustota
+Album: exist
+Track: 01
+Date: 2013
+mtime: 1398337426
+song_end
+song_begin: 02. strange. today. again.mp3
+Time: 312
+Artist: r.roo
+Title: strange. today. again
+Album: exist
+Track: 02
+Date: 2013
+mtime: 1398337427
+song_end
+song_begin: 03. Schutz 1648.mp3
+Time: 285
+Artist: r.roo
+Title: Schutz 1648
+Album: exist
+Track: 03
+Date: 2013
+mtime: 1398337420
+song_end
+song_begin: 04. source of evening impermanence.mp3
+Time: 416
+Artist: r.roo
+Title: source of evening impermanence
+Album: exist
+Track: 04
+Date: 2013
+mtime: 1398337421
+song_end
+song_begin: 05. empty dreams.mp3
+Time: 422
+Artist: r.roo
+Title: empty dreams
+Album: exist
+Track: 05
+Date: 2013
+mtime: 1398337429
+song_end
+song_begin: 06. fatale (with SiJ).mp3
+Time: 425
+Artist: r.roo
+Title: fatale (with SiJ)
+Album: exist
+Track: 06
+Date: 2013
+mtime: 1398337428
+song_end
+song_begin: 07. ne nado, ne trogaite menya.mp3
+Time: 274
+Artist: r.roo
+Title: ne nado, ne trogaite menya
+Album: exist
+Track: 07
+Date: 2013
+mtime: 1398337427
+song_end
+song_begin: 08. exist. part 1.mp3
+Time: 333
+Artist: r.roo
+Title: exist. part 1
+Album: exist
+Track: 08
+Date: 2013
+mtime: 1398337427
+song_end
+song_begin: 09. until.mp3
+Time: 439
+Artist: r.roo
+Title: until
+Album: exist
+Track: 09
+Date: 2013
+mtime: 1398337407
+song_end
+song_begin: 10. I am you.mp3
+Time: 353
+Artist: r.roo
+Title: I am you
+Album: exist
+Track: 10
+Date: 2013
+mtime: 1398337428
+song_end
+song_begin: 11. source of night impermanence.mp3
+Time: 466
+Artist: r.roo
+Title: source of night impermanence
+Album: exist
+Track: 11
+Date: 2013
+mtime: 1398337428
+song_end
+song_begin: 12. time after time. item after item..mp3
+Time: 330
+Artist: r.roo
+Title: time after time. item after item.
+Album: exist
+Track: 12
+Date: 2013
+mtime: 1398337419
+song_end
+song_begin: 13. the man of the crowd.mp3
+Time: 243
+Artist: r.roo
+Title: the man of the crowd
+Album: exist
+Track: 13
+Date: 2013
+mtime: 1398337426
+song_end
+song_begin: 14. harbor (with EyeScream).mp3
+Time: 218
+Artist: r.roo
+Title: harbor (with EyeScream)
+Album: exist
+Track: 14
+Date: 2013
+mtime: 1398337429
+song_end
+song_begin: 15. exist. part 2.mp3
+Time: 231
+Artist: r.roo
+Title: exist. part 2
+Album: exist
+Track: 15
+Date: 2013
+mtime: 1398337428
+song_end
+song_begin: 16. don’t forget to breathe.mp3
+Time: 287
+Artist: r.roo
+Title: don’t forget to breathe
+Album: exist
+Track: 16
+Date: 2013
+mtime: 1398337417
+song_end
+song_begin: 17. r-room #3.mp3
+Time: 153
+Artist: r.roo
+Title: r-room #3
+Album: exist
+Track: 17
+Date: 2013
+mtime: 1398337417
+song_end
+song_begin: 18. after 22.mp3
+Time: 671
+Artist: r.roo
+Title: after 22
+Album: exist
+Track: 18
+Date: 2013
+mtime: 1398337430
+song_end
+song_begin: 19. when I feel your presence (with Erissoma).mp3
+Time: 321
+Artist: r.roo
+Title: when I feel your presence (with Erissoma)
+Album: exist
+Track: 19
+Date: 2013
+mtime: 1398337423
+song_end
+end: r.roo - 2013, exist [320]
