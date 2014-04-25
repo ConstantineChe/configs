@@ -24,9 +24,9 @@ fi
 #alias netbeans="/home/constantine/netbeans-8.0/bin/netbeans & exit"
 #alias phpstorm="/home/constantine/PhpStorm-133.803/bin/phpstorm.sh"
 #============================ Home ==================================
-#alias netbeans="/home/coon/netbeans-8.0/bin/netbeans & exit"
-#alias pycharm="/path/to/pycharm.sh"
-#alias phpstorm="/home/constantine/PhpStorm-133.803/bin/phpstorm.sh"
+#alias netbeans="$HOME/netbeans-8.0/bin/netbeans & exit"
+#alias pycharm="$HOME/pycharm-community-3.1.1/bin/pycharm.sh"
+alias phpstorm="$HOME/PhpStorm-133.803/bin/phpstorm.sh"
 #====================================================================
 alias chrom="chromium & exit"
 alias reboot="sudo shutdown -r now"
@@ -41,11 +41,17 @@ if [ "x$TERM" = "xxterm" ]
 fi
 
 # Java
-export JAVA_HOME=/home/constantine/jdk1.7.0_51
-export PATH=$PATH:/home/constantine/jdk1.7.0_51/bin
+export JAVA_HOME=$HOME/jdk1.7.0_45
+export PATH=$PATH:$HOME/jdk1.7.0_45/bin
+export PATH=$PATH:$HOME/.gem/ruby/2.0.0/bin
+
+# Ruby
+
+export PATH=$HOME/.rbenv/bin:$PATH
+export RUBYOPT=""
 
 
-# RAM usage
+ #RAM usage
 function ram() {
   local sum
   local items
