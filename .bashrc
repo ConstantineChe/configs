@@ -16,25 +16,19 @@ fi
 
 
 # Put your fun stuff here.
-#####################################################################
-#========================== Aliases =================================
-#####################################################################
-#=========================Local aliases==============================
-#============================ Work ==================================
-#alias netbeans="/home/constantine/netbeans-8.0/bin/netbeans & exit"
-#alias phpstorm="/home/constantine/PhpStorm-133.803/bin/phpstorm.sh"
-#============================ Home ==================================
-#alias netbeans="$HOME/netbeans-8.0/bin/netbeans & exit"
-#alias pycharm="$HOME/pycharm-community-3.1.1/bin/pycharm.sh"
-alias phpstorm="$HOME/PhpStorm-133.803/bin/phpstorm.sh"
-#====================================================================
+# Aliases
+alias netbeans="$HOME/netbeans-8.0/bin/netbeans"
+alias pycharm="$HOME/pycharm-community-3.1.1/bin/pycharm.sh"
+alias phpstorm="$HOME/PhpStorm-133.982/bin/phpstorm.sh"
 alias chrom="chromium & exit"
 alias reboot="sudo shutdown -r now"
 alias shutdown="sudo shutdown -h now"
 alias crawl="sudo /usr/games/bin/crawl"
-####################################################################
+alias commit="git commit -m "
+alias mtar="tar -zcvf "
+alias utar="tar -zxvf "
 
-###### 256 colors #########
+# 256 colors
 if [ "x$TERM" = "xxterm" ]
     then
     export TERM="xterm-256color"
