@@ -25,6 +25,7 @@ alias reboot="sudo shutdown -r now"
 alias shutdown="sudo shutdown -h now"
 alias crawl="sudo /usr/games/bin/crawl"
 alias commit="git commit -m "
+alias push="git push "
 alias mtar="tar -zcvf "
 alias utar="tar -zxvf "
 
@@ -34,8 +35,6 @@ if [ "x$TERM" = "xxterm" ]
     export TERM="xterm-256color"
 fi
 
-# Keyboard layout
-setxkbmap -layout us,ru -variant -option grp:caps_toggle,grp_led:scroll,terminate:ctrl_alt_bksp 
 
 # Java
 export JAVA_HOME=$HOME/jdk1.7.0_45
@@ -68,5 +67,4 @@ function ram() {
     fi
   fi
 }
-
 
