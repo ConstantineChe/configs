@@ -19,7 +19,7 @@ function ram() {
    fi
 }
 
-/usr/bin/i3status --config ~/.i3/i3status2.config | (read line && echo $line && read line && echo $line && while :
+/usr/bin/i3status --config $1 | (read line && echo $line && read line && echo $line && while :
 do
 	read line
 	id=$(xprop -root | awk '/_NET_ACTIVE_WINDOW\(WINDOW\)/{print $NF}')
