@@ -1,0 +1,92 @@
+! Normal
+! color0    BLACK
+! color1    red
+! color2    green
+! color3    yellow
+! color4    blue 
+! color5    purple 
+! color6    cyan 
+! color7    white
+
+urxvt*color0:    #000000
+urxvt*color1:    #C00000
+urxvt*color2:    #00C000
+urxvt*color3:    #C0C000
+urxvt*color4:    #0C00C0
+urxvt*color5:    #AA00AA
+urxvt*color6:    #00AAAA
+urxvt*color7:    #FFFFFF
+
+! Light
+! color8    darkgray
+! color9    red
+! color10    green
+! color11    yellow
+! color12    blue 
+! color13    purple 
+! color14    cyan 
+! color15    lightgray
+
+urxvt*color8:    #212121
+urxvt*color9:    #FF8080
+urxvt*color10:    #80FF80
+urxvt*color11:    #FFFF88
+urxvt*color12:    #99CCFF
+urxvt*color13:    #B14CC2
+urxvt*color14:    #9BFFFF
+urxvt*color15:    #D0D0D0
+
+
+
+
+
+#URxvt.font: xft:Clean:size=9
+
+URxvt*font:           -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+URxvt*boldFont:	      -misc-fixed-medium-r-bold--13-120-75-75-C-70-iso10646-1
+#URxvt.italicFont:-*-clean-medium-r-*-*-12-*-*-*-*-*-*-* 
+#URxvt.boldItalicFont: -*-clean-medium-r-*-*-12-*-*-*-*-*-*-*
+
+# 
+URxvt*scrollBar: false
+
+
+URxvt*background: #2f4f4f
+URxvt*foreground: #dbfef8
+
+
+URxvt*perl-lib: /home/coon/.config/urxvt/perl/
+
+
+#clickable urls
+URxvt*perl-ext-common:  default,tabbedex,fullscreen,clipboard,url-select,
+URxvt.matcher.button:	1
+URxvt.url-launcher: /usr/bin/chromium
+
+#fullscreen
+*keysym.F11: perl:fullscreen:switch
+
+#url-select without mouse
+URxvt.urlLauncher:     firefox
+URxvt.underlineURLs:   true
+URxvt.keysym.M-u:      perl:url-select:select_next
+
+# tabbed (i don't need no anymore)
+#URXvt.tabbed.reopen-on-close: yes
+#URxvt.tabbed.new-button: no
+#URxvt.tabbed*transparent:true
+#URxvt.tabbed.title:true
+#URxvt.tabbed.autohide:true
+#URxvt.tabbedex*transparent:true
+#URxvt*keysym.Control-t: perl:tabbedex:new_tab
+#URxvt*keysym.Control-Tab: perl:tabbedex:next_tab
+#URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
+#URxvt.keysym.Control-Shift-Left: perl:tabbex:move_tab_left
+#URxvt.keysym.Control-Shift-Right: perl:tabbex:move_tab_right
+#URxvt.keysym.Control-Shift-R: perl:tabbex:rename_tab
+
+# clipboard
+URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+
