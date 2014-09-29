@@ -40,11 +40,10 @@ urxvt*color15:    #D0D0D0
 
 
 
-URxvt*saveLines: 5000
 #URxvt.font: xft:Clean:size=9
 
-URxvt*font:           xft:Inconsolata:size=10
-URxvt*boldFont:		xft:Inconsolata:size=10:style=bold:antalias=true:hintig=slight
+URxvt*font:           -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+URxvt*boldFont:	      -misc-fixed-medium-r-bold--13-120-75-75-C-70-iso10646-1
 #URxvt.italicFont:-*-clean-medium-r-*-*-12-*-*-*-*-*-*-* 
 #URxvt.boldItalicFont: -*-clean-medium-r-*-*-12-*-*-*-*-*-*-*
 
@@ -52,8 +51,8 @@ URxvt*boldFont:		xft:Inconsolata:size=10:style=bold:antalias=true:hintig=slight
 URxvt*scrollBar: false
 
 
-URxvt*background: black
-URxvt*foreground: #C0C0C0
+URxvt*background: #0f1f1f
+URxvt*foreground: #dbfef8
 
 
 URxvt*perl-lib: /home/coon/.config/urxvt/perl/
@@ -72,19 +71,19 @@ URxvt.urlLauncher:     firefox
 URxvt.underlineURLs:   true
 URxvt.keysym.M-u:      perl:url-select:select_next
 
-# tabbed
-URXvt.tabbed.reopen-on-close: yes
-URxvt.tabbed.new-button: no
-URxvt.tabbed*transparent:true
-URxvt.tabbed.title:true
-URxvt.tabbed.autohide:true
-URxvt.tabbedex*transparent:true
-URxvt*keysym.Control-t: perl:tabbedex:new_tab
-URxvt*keysym.Control-Tab: perl:tabbedex:next_tab
-URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
-URxvt.keysym.Control-Shift-Left: perl:tabbex:move_tab_left
-URxvt.keysym.Control-Shift-Right: perl:tabbex:move_tab_right
-URxvt.keysym.Control-Shift-R: perl:tabbex:rename_tab
+# tabbed (i don't need no anymore)
+#URXvt.tabbed.reopen-on-close: yes
+#URxvt.tabbed.new-button: no
+#URxvt.tabbed*transparent:true
+#URxvt.tabbed.title:true
+#URxvt.tabbed.autohide:true
+#URxvt.tabbedex*transparent:true
+#URxvt*keysym.Control-t: perl:tabbedex:new_tab
+#URxvt*keysym.Control-Tab: perl:tabbedex:next_tab
+#URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
+#URxvt.keysym.Control-Shift-Left: perl:tabbex:move_tab_left
+#URxvt.keysym.Control-Shift-Right: perl:tabbex:move_tab_right
+#URxvt.keysym.Control-Shift-R: perl:tabbex:rename_tab
 
 # clipboard
 URxvt.keysym.M-c:   perl:clipboard:copy

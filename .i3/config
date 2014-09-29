@@ -37,10 +37,10 @@ bindsym $mod+d exec dmenu_run
 bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+h focus left; exec killall -USR1 i3status
-bindsym $mod+j focus down; exec killall -USR1 i3status
-bindsym $mod+k focus up; exec killall -USR1 i3status
-bindsym $mod+l focus right; exec killall -USR1 i3status
+bindsym $mod+j focus left; exec killall -USR1 i3status
+bindsym $mod+k focus down; exec killall -USR1 i3status
+bindsym $mod+l focus up; exec killall -USR1 i3status
+bindsym $mod+semicolon focus right; exec killall -USR1 i3status
 
 #no mouse focus
 focus_follows_mouse no
@@ -52,10 +52,10 @@ bindsym $mod+Up focus up; exec killall -USR1 i3status
 bindsym $mod+Right focus right; exec killall -USR1 i3status
 
 # move focused window
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -64,7 +64,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+g split h
+bindsym $mod+h split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -156,7 +156,7 @@ bar
 {
 	id bar-1	
 	position bottom
-	status_command ~/.i3/i3status.sh
+	status_command i3status -c ~/.i3/i3status.config
 
 	colors
 	{
@@ -176,6 +176,7 @@ bar
 {
 	id bar-2
 	workspace_buttons no
+	binding_mode_indicator no
 	position top
 	tray_output none
 	status_command ~/.i3/focus.sh ~/.i3/i3status2.config
@@ -191,7 +192,28 @@ bar
 #borders
 new_window pixel 2
 
+# lock
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id i3exit lock, mode "default"
+    bindsym e exec --no-startup-id i3exit logout, mode "default"
+    bindsym s exec --no-startup-id i3exit suspend, mode "default"
+    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"  
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Pause mode "$mode_system"
+
 
 #conky
 exec --no-startup-id conky
-# Workspace names
+exec setxkbmap -layout us,ru -variant -option grp:caps_toggle,grp_led:scroll,terminate:ctrl_alt_bksp
+exec  xrandr --output VGA1 --auto --primary --output eDP1 --auto --right-of VGA1
+exec vboxreload
+bindsym $mod+shift+plus exec amixer -c 2 -- sset Headphone playback 2dB+
+bindsym $mod+shift+minus exec amixer -c 2 -- sset Headphone playback 2dB-
+bindsym Print exec zscreen
