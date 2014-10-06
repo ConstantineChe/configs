@@ -239,6 +239,7 @@ exec pycharm
 exec chromium
 exec google-chrome-stable
 exec emacs
+exec urxvt -e wicd
 exec urxvt -e wicd-curses
 exec urxvt -e cd /srv/http/richroyal_shop/fab/
 exec urxvt
