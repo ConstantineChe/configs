@@ -1,0 +1,102 @@
+# Here will be my zshrc
+
+if [[ $- != *i* ]] ; then
+	# Shell is non-interactive.  Be done now!
+	return
+fi
+
+autoload -U colors && colors
+
+# Prompt
+#export PS1="%{$reset_color%}%{$fg_no_bold[green]%}%n@%M%{$reset_color%} %B%{$fg_no_bold[cyan]%}%~%b%{$reset_color%} %{$fg_no_bold[green]%}$%{$reset_color%} "
+
+
+autoload -U compinit promptinit
+compinit
+promptinit
+
+
+# Aliases
+alias reboot="sudo shutdown -r now"
+alias shutdown="sudo shutdown -h now"
+alias mtar="tar -zcvf "
+alias utar="tar -zxvf "
+alias rcache='rm -rf /srv/http/richroyal_shop/build/var/cache/*'
+alias sshti='ssh -p 504 cgi@testing.symmetrics.de'
+alias sshtp='ssh -p 504 symmetrics@testpublic.symmetrics.de'
+alias emacs='emacsclient -ct'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias git-pup='git pull && git submodule init && git submodule update && git submodule status'
+
+# 256 colors
+if [ "x$TERM" = "xxterm" ]
+    then
+    export TERM="xterm-256color"
+fi
+
+# Java
+export JAVA_HOME=$HOME/jdk1.7.0_45
+export PATH=$PATH:$HOME/jdk1.7.0_45/bin
+
+# Ruby
+
+export PATH=$HOME/.rbenv/bin:$PATH
+export RUBYOPT=""
+
+# Home scripts
+export PATH=$HOME/scripts/:$PATH
+
+# Default apps
+export EDITOR="emacsclient -ct"
+export BROWSER="chromium"
+
+export SHELL='/bin/zsh'
+
+# Completion
+
+#setopt completeinword
+#zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
+#zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
+
+# Command correction
+#setopt correctall
+
+# no double entries in the shell history
+export HISTCONTROL="$HISTCONTROL erasedups:ignoreboth"
+
+# Show how much RAM application uses.
+# $ ram safari
+# # => safari uses 154.69 MBs of RAM.
+function ram() {
+  local sum
+  local items
+  local app="$1"
+  if [ -z "$app" ]; then
+    echo "First argument - pattern to grep from processes"
+  else
+    sum=0
+    for i in `ps aux | grep -i "$app" | grep -v "grep" | awk '{print $6}'`; do
+      sum=$(($i + $sum))
+    done
+    sum=$(echo "scale=2; $sum / 1024.0" | bc)
+    if [[ $sum != "0" ]]; then
+      echo "${fg[blue]}${app}${reset_color} uses ${fg[green]}${sum}${reset_color} MBs of RAM."
+    else
+      echo "There are no processes with pattern '${fg[blue]}${app}${reset_color}' are running."
+    fi
+  fi
+}
+
+if [[ "$TERM" != linux ]] ; then
+    export endprompt='λ'
+else
+    export endprompt='$'
+fi
+
+zstyle ':prompt:grml:left:items:user' pre '%F{green}'
+zstyle ':prompt:grml:left:items:at' pre '%F{green}'
+zstyle ':prompt:grml:left:items:path' pre '%F{blue}'
+zstyle ':prompt:grml:*:items:percent' token "
+$endprompt "
+zstyle ':prompt:grml:left:items:percent' pre '%F{white}'

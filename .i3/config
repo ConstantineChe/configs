@@ -92,24 +92,24 @@ bindsym $mod+a focus parent; exec killall -USR1 i3status
 
 # switch to workspace
 bindsym $mod+1  exec killall -USR1 i3status; workspace "1: Skype"
-bindsym $mod+2  exec killall -USR1 i3status; workspace "2: bash"
+bindsym $mod+2  exec killall -USR1 i3status; workspace "2: term"
 bindsym $mod+3  exec killall -USR1 i3status; workspace "3: Web"
 bindsym $mod+4  exec killall -USR1 i3status; workspace "4: IDE"
 bindsym $mod+5  exec killall -USR1 i3status; workspace "5: Chromium"
 bindsym $mod+6  exec killall -USR1 i3status; workspace "6: emacs"
-bindsym $mod+7  exec killall -USR1 i3status; workspace "7: clojure"
+bindsym $mod+7  exec killall -USR1 i3status; workspace "7: doc"
 bindsym $mod+8  exec killall -USR1 i3status; workspace "8: misc"
 bindsym $mod+9  exec killall -USR1 i3status; workspace "9: random"
 bindsym $mod+0  exec killall -USR1 i3status; workspace "10: mail"
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace "1: Skype"; exec killall -USR1 i3status
-bindsym $mod+Shift+2 move container to workspace "2: bash"; exec killall -USR1 i3status
+bindsym $mod+Shift+2 move container to workspace "2: term"; exec killall -USR1 i3status
 bindsym $mod+Shift+3 move container to workspace "3: Web"; exec killall -USR1 i3status
 bindsym $mod+Shift+4 move container to workspace "4: IDE"; exec killall -USR1 i3status
 bindsym $mod+Shift+5 move container to workspace "5: Chromium"; exec killall -USR1 i3status
 bindsym $mod+Shift+6 move container to workspace "6: emacs"; exec killall -USR1 i3status
-bindsym $mod+Shift+7 move container to workspace "7: clojure"; exec killall -USR1 i3status
+bindsym $mod+Shift+7 move container to workspace "7: doc"; exec killall -USR1 i3status
 bindsym $mod+Shift+8 move container to workspace "8: misc"; exec killall -USR1 i3status
 bindsym $mod+Shift+9 move container to workspace "9: random"; exec killall -USR1 i3status
 bindsym $mod+Shift+0 move container to workspace "10: mail"; exec killall -USR1 i3status
@@ -152,9 +152,9 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar 
+bar
 {
-	id bar-1	
+	id bar-1
 	position bottom
 	status_command i3status -c ~/.i3/i3status.config
 
@@ -200,7 +200,7 @@ mode "$mode_system" {
     bindsym s exec --no-startup-id i3exit suspend, mode "default"
     bindsym h exec --no-startup-id i3exit hibernate, mode "default"
     bindsym r exec --no-startup-id i3exit reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"  
+    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
@@ -213,33 +213,23 @@ bindsym $mod+Pause mode "$mode_system"
 #workspace 2 "bash" to output right
 #workspace 3 "Web" to output right
 bindsym $mod+shift+x move workspace to output left
-bindsym $mod+shift+s exec ~/scripts/output.sh
+bindsym $mod+shift+s exec ~/.i3/output
 
-# assight to workspaces
+# assign to workspaces
 assign [class="Skype"] → "1: Skype"
-assign [class="URxvt"] → "2: bash"
+assign [class="URxvt"] → "2: term"
 assign [class="Google-chrome-stable"] → "3: Web"
 assign [class="jetbrains-phpstorm"] → "4: IDE"
 assign [class="jetbrains-pycharm"] → "4: IDE"
 assign [class="Chromium"] → "5: Chromium"
 assign [class="Emacs"] → "6: emacs"
+assign [class="(?i)thunderbird"] → "10: mail"
 
 # kb layout
 exec setxkbmap -layout us,ru -variant -option grp:caps_toggle,grp_led:scroll,terminate:ctrl_alt_bksp
-# Monitors
-exec  xrandr --output VGA1 --auto --primary --output eDP1 --auto --right-of VGA1
 
-bindsym $mod+shift+plus exec amixer -c 2 -- sset Headphone playback 2dB+
-bindsym $mod+shift+minus exec amixer -c 2 -- sset Headphone playback 2dB-
+bindsym $mod+shift+plus exec mpc volume +5
+bindsym $mod+shift+minus exec mpc volume -5
 bindsym Print exec zscreen
 
-exec skype
-exec phpstorm.sh
-exec pycharm
-exec chromium
-exec google-chrome-stable
-exec emacs
-exec urxvt -e wicd-curses
-exec urxvt -e cd /srv/http/richroyal_shop/fab/
-exec urxvt
-exec ~/scripts/output.sh
+exec ~/.i3/startup.sh
