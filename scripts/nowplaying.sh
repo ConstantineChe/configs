@@ -10,4 +10,4 @@ track ()
       volume=`mpc | grep volume: | cut -f2 -d' '`
       echo "$artist - $title $position| Vol: $volume"
 }
-echo -e "Playing: "`track`" "
+echo -e "mpd: "`track`" "
