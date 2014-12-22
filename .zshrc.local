@@ -7,10 +7,6 @@ fi
 
 autoload -U colors && colors
 
-# Prompt
-#export PS1="%{$reset_color%}%{$fg_no_bold[green]%}%n@%M%{$reset_color%} %B%{$fg_no_bold[cyan]%}%~%b%{$reset_color%} %{$fg_no_bold[green]%}$%{$reset_color%} "
-
-
 autoload -U compinit promptinit
 compinit
 promptinit
@@ -64,6 +60,12 @@ export SHELL='/bin/zsh'
 
 # no double entries in the shell history
 export HISTCONTROL="$HISTCONTROL erasedups:ignoreboth"
+
+# Python eval-print line
+
+function pyep() {
+    python2 -c "print($1)"
+    }
 
 # Show how much RAM application uses.
 # $ ram safari

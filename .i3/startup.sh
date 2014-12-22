@@ -7,6 +7,6 @@ phpstorm.sh &
 pycharm &
 thunderbird &
 urxvt -e wicd-curses &
-urxvt &
-urxvt &
+urxvt -e htop &
+urxvt -e emacsclient -ct &
 sleep 3 & ~/.i3/output
