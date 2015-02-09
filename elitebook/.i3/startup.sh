@@ -1,12 +1,11 @@
 #!/bin/bash
 skype &
-google-chrome-stable &
-chromium &
+chromium-browser &
 emacs &
 phpstorm.sh &
 pycharm &
 thunderbird &
 urxvt -e wicd-curses &
+urxvt -e htop &
 urxvt &
-urxvt &
-sleep 3 & ~/.i3/output
+& ~/.i3/output
