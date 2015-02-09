@@ -1,4 +1,4 @@
---
+-- -*- mode: Haskell -*-
         -- xmonad example config file.
         --
         -- A template showing all available configuration hooks,
@@ -10,23 +10,43 @@
         import XMonad
         import Data.Monoid
         import System.Exit
+        import System.IO
 
         import XMonad.Hooks.ManageDocks
+        import XMonad.Hooks.SetWMName
+        import XMonad.Hooks.DynamicLog
         import XMonad.Util.Run(spawnPipe)
+        import XMonad.Util.EZConfig(additionalKeys)
 
         import qualified XMonad.StackSet as W
         import qualified Data.Map        as M
+        import XMonad.Hooks.ManageHelpers
+
+
+        myDoFullFloat :: ManageHook
+        myDoFullFloat = doF W.focusDown <+> doFullFloat
 
 
         main = do
-            xmproc <- spawnPipe "/usr/bin/xmobar /home/constantine/.xmonad/xmobarrc"
-            xmproc <- spawnPipe "/usr/bin/xmobar /home/constantine/.xmonad/xmobar2rc"
-            xmproc <- spawnPipe "/usr/bin/xmobar -x 1 /home/constantine/.xmonad/xmobarrc"
-            xmproc <- spawnPipe "/usr/bin/xmobar -x 1 /home/constantine/.xmonad/xmobar2rc"
+            xmproc  <- spawnPipe "/usr/bin/xmobar /home/constantine/.xmonad/xmobarrc"
+            xmproc  <- spawnPipe "/usr/bin/xmobar -x 1 /home/constantine/.xmonad/xmobarrc"
+            xmproc2 <- spawnPipe "/usr/bin/xmobar -x 1 /home/constantine/.xmonad/xmobar3rc"
+            xmproc  <- spawnPipe "/usr/bin/xmobar /home/constantine/.xmonad/xmobar2rc"
+
             xmonad defaults
-                { manageHook = manageDocks <+> manageHook defaultConfig
+                { manageHook = manageDocks <+> myManageHook <+> manageHook defaultConfig
                 , layoutHook = avoidStruts  $  layoutHook defaultConfig
+                , startupHook = setWMName "LG3D" <+> startupHook defaultConfig
+                , logHook = dynamicLogWithPP xmobarPP
+                           { ppOutput = hPutStrLn xmproc
+                           , ppCurrent = xmobarColor "yellow" "" . wrap "[" "]"
+                           , ppHiddenNoWindows = xmobarColor "grey" ""
+                           , ppTitle   = xmobarColor "green"  "" . shorten 40
+                           , ppVisible = wrap "(" ")"
+                           , ppUrgent  = xmobarColor "red" "yellow"
+                           }
                 }
+
 
 
 
@@ -37,7 +57,7 @@
 
         -- Whether focus follows the mouse pointer.
         myFocusFollowsMouse :: Bool
-        myFocusFollowsMouse = True
+        myFocusFollowsMouse = False
 
         -- Width of the window border in pixels.
         --
@@ -60,12 +80,33 @@
         --
         -- > workspaces = ["web", "irc", "code" ] ++ map show [4..9]
         --
-        myWorkspaces    = ["1","2","3","4","5","6","7","8","9"]
+
+        xmobarEscape = concatMap doubleLts
+                     where doubleLts '<' = "<<"
+                           doubleLts x   = [x]
+
+        myWorkspaces :: [String]
+        myWorkspaces = clickable . (map xmobarEscape) $ ["1: skype","2: term","3: web","4: IDE","5: IRC", "6: emacs"]
+
+           where
+                clickable l = [ "<action=xdotool key alt+" ++ show (n) ++ ">" ++ ws ++ "</action>" |
+                                (i,ws) <- zip [1..6] l,
+                               let n = i ]
+
+   --        myWorkspaces :: [String]
+   --   myWorkspaces = clickable . map dzenEscape $
+   --       ["1: skype","2: term","3: web","4: IDE","5: IRC","6: emacs","7","8","9"]
+   --         where clickable l = [ x ++ ws ++ "^ca()^ca()^ca()" |
+   --                        (i,ws) <- zip "123qweasd" l,
+   --                        let n = i
+   --                            x =    "^ca(4,xdotool key super+Right)"
+   --                                ++ "^ca(5,xdotool key super+Left)"
+   --                                ++ "^ca(1,xdotool key super+" ++ show n ++ ")"]
 
         -- Border colors for unfocused and focused windows, respectively.
         --
         myNormalBorderColor  = "#dddddd"
-        myFocusedBorderColor = "#ff0000"
+        myFocusedBorderColor = "#7f7fff"
 
         ------------------------------------------------------------------------
         -- Key bindings. Add, modify or remove key bindings here.
@@ -220,8 +261,10 @@
         myManageHook = composeAll
             [ className =? "MPlayer"        --> doFloat
             , className =? "Gimp"           --> doFloat
+            , className =? "Edit_with_Emacs_FRAME" --> doCenterFloat
             , resource  =? "desktop_window" --> doIgnore
-            , resource  =? "kdesktop"       --> doIgnore ]
+            , resource  =? "kdesktop"       --> doIgnore
+             ]
 
         ------------------------------------------------------------------------
         -- Event handling
@@ -239,7 +282,6 @@
         -- Perform an arbitrary action on each internal state change or X event.
         -- See the 'XMonad.Hooks.DynamicLog' extension for examples.
         --
-        myLogHook = return ()
 
         ------------------------------------------------------------------------
         -- Startup hook
@@ -282,6 +324,6 @@
                 layoutHook         = myLayout,
                 manageHook         = myManageHook,
                 handleEventHook    = myEventHook,
-                logHook            = myLogHook,
+--                logHook            = myLogHook,
                 startupHook        = myStartupHook
             }
