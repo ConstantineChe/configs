@@ -28,10 +28,11 @@
 
 
         main = do
-            xmproc  <- spawnPipe "/usr/bin/xmobar /home/constantine/.xmonad/xmobarrc"
-            xmproc  <- spawnPipe "/usr/bin/xmobar -x 1 /home/constantine/.xmonad/xmobarrc"
-            xmproc2 <- spawnPipe "/usr/bin/xmobar -x 1 /home/constantine/.xmonad/xmobar3rc"
-            xmproc  <- spawnPipe "/usr/bin/xmobar /home/constantine/.xmonad/xmobar2rc"
+            xmproc <- spawnPipe "/usr/bin/xmobar /home/constantine/.xmonad/xmobarrc"
+            xmproc <- spawnPipe "/usr/bin/xmobar -x 1 /home/constantine/.xmonad/xmobarrc"
+            xmproc <- spawnPipe "/usr/bin/xmobar -x 1 /home/constantine/.xmonad/xmobar3rc"
+            xmproc <- spawnPipe "/usr/bin/xmobar /home/constantine/.xmonad/xmobar2rc"
+            spawn "setxkbmap -layout us,ru -variant -option grp:caps_toggle,grp_led:scroll,terminate:ctrl_alt_bksp"
 
             xmonad defaults
                 { manageHook = manageDocks <+> myManageHook <+> manageHook defaultConfig
@@ -86,12 +87,11 @@
                            doubleLts x   = [x]
 
         myWorkspaces :: [String]
-        myWorkspaces = clickable . (map xmobarEscape) $ ["1: skype","2: term","3: web","4: IDE","5: IRC", "6: emacs"]
-
-           where
-                clickable l = [ "<action=xdotool key alt+" ++ show (n) ++ ">" ++ ws ++ "</action>" |
-                                (i,ws) <- zip [1..6] l,
-                               let n = i ]
+        myWorkspaces = clickable . (map xmobarEscape) $ ["1: skype","2: term","3: web","4: IDE","5: IRC", "6: emacs", "7: random", "8: mail"]
+                     where
+                     clickable l = [ "<action=`xdotool key super+" ++ show n ++ "`>" ++ ws ++ "</action>" |
+                             (i,ws) <- zip [1..8] l,
+                            let n = i ]
 
    --        myWorkspaces :: [String]
    --   myWorkspaces = clickable . map dzenEscape $
@@ -279,8 +279,9 @@
         ------------------------------------------------------------------------
         -- Status bars and logging
 
-        -- Perform an arbitrary action on each internal state change or X event.
-        -- See the 'XMonad.Hooks.DynamicLog' extension for examples.
+        -- Perform an arbitrary action on each internal state change or
+        -- X event.  See the 'XMonad.Hooks.DynamicLog' extension for
+        -- examples.
         --
 
         ------------------------------------------------------------------------

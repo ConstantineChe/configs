@@ -40,8 +40,8 @@ Config {
    , commands =
 
         -- weather monitor
-        [ Run Weather "RJTT" [ "--template", "<skyCondition> | <fc=#4682B4><tempC></fc>°C | <fc=#4682B4><rh></fc>% | <fc=#4682B4><pressure></fc>hPa"
-                             ] 36000
+        [ Run Weather "UKKK" [ "--template", "<skyCondition> | <fc=#4682B4><tempC></fc>°C | <fc=#4682B4><rh></fc>% | <fc=#4682B4><pressure></fc>hPa"
+                             ] 3600
 
         , Run UnsafeStdinReader
 
@@ -100,7 +100,7 @@ Config {
 
         -- time and date indicator
         --   (%F = y-m-d date, %a = day of week, %T = h:m:s time)
-        , Run Date           "<fc=#ABABAB>%F (%a) %T</fc>" "date" 10
+        , Run Date           "<action=`gsimplecal`><fc=#ABABAB>%F (%a) %T</fc></action>" "date" 10
 
         -- keyboard layout indicator
         , Run Kbd            [ ("ru" , "<fc=#8B0000>RU</fc>")
