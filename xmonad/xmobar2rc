@@ -13,7 +13,7 @@ Config {
    -- layout
    , sepChar =  "%"   -- delineator between plugin names and straight text
    , alignSep = "}{"  -- separator between left-right alignment
-   , template = "%UnsafeStdinReader% }{ %RJTT% | %date% || %kbd% "
+   , template = "%UnsafeStdinReader% }{ %UKKK% | %date% || %kbd% "
 
    -- general behavior
    , hideOnStart =      False   -- start with window unmapped (hidden)
@@ -41,7 +41,7 @@ Config {
 
         -- weather monitor
         [ Run Weather "UKKK" [ "--template", "<skyCondition> | <fc=#4682B4><tempC></fc>°C | <fc=#4682B4><rh></fc>% | <fc=#4682B4><pressure></fc>hPa"
-                             ] 3600
+                             ] 36000
 
         , Run UnsafeStdinReader
 
@@ -103,7 +103,7 @@ Config {
         , Run Date           "<action=`gsimplecal`><fc=#ABABAB>%F (%a) %T</fc></action>" "date" 10
 
         -- keyboard layout indicator
-        , Run Kbd            [ ("ru" , "<fc=#8B0000>RU</fc>")
+        , Run Kbd            [ ("ru" , "<fc=#008B00>RU</fc>")
                              , ("us" , "<fc=#8B0000>US</fc>")
                              ]
         ]

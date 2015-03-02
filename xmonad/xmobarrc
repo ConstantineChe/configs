@@ -13,7 +13,7 @@ Config {
    -- layout
    , sepChar =  "%"   -- delineator between plugin names and straight text
    , alignSep = "}{"  -- separator between left-right alignment
-   , template = "%battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% }{ %RJTT% | %date% || %kbd% "
+   , template = "%battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% }{  %mpd% "
 
    -- general behavior
    , hideOnStart =      False   -- start with window unmapped (hidden)
@@ -42,6 +42,11 @@ Config {
         -- weather monitor
         [ Run Weather "UKHH" [ "--template", "<skyCondition> | <fc=#4682B4><tempC></fc>°C | <fc=#4682B4><rh></fc>% | <fc=#4682B4><pressure></fc>hPa"
                              ] 36000
+
+        -- MPD monitor
+        , Run MPD ["-t",
+          "<composer> <title> (<album>) <lapsed>/<length> <action=mpc toggle><statei></action> <bar> <action=mpc volume -5>-</action><volume><action=mpc volume +5>+</action>",
+          "--", "-P", ">>", "-Z", "|", "-S", "><"] 10
 
         -- network activity monitor (dynamic interface resolution)
         , Run DynNetwork     [ "--template" , "<dev>: <tx>kB/s|<rx>kB/s"
@@ -98,7 +103,7 @@ Config {
 
         -- time and date indicator
         --   (%F = y-m-d date, %a = day of week, %T = h:m:s time)
-        , Run Date           "<fc=#ABABAB>%F (%a) %T</fc>" "date" 10
+        , Run Date           "<action=`gsimplecak`><fc=#ABABAB>%F (%a) %T</fc>" "date</action>" 10
 
         -- keyboard layout indicator
         , Run Kbd            [ ("ru" , "<fc=#8B0000>RU</fc>")

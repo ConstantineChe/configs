@@ -17,6 +17,7 @@
         import XMonad.Hooks.DynamicLog
         import XMonad.Util.Run(spawnPipe)
         import XMonad.Util.EZConfig(additionalKeys)
+        import Graphics.X11.ExtraTypes.XF86
 
         import qualified XMonad.StackSet as W
         import qualified Data.Map        as M
@@ -29,10 +30,7 @@
 
         main = do
             xmproc <- spawnPipe "/usr/bin/xmobar /home/constantine/.xmonad/xmobarrc"
-            xmproc <- spawnPipe "/usr/bin/xmobar -x 1 /home/constantine/.xmonad/xmobarrc"
-            xmproc <- spawnPipe "/usr/bin/xmobar -x 1 /home/constantine/.xmonad/xmobar3rc"
             xmproc <- spawnPipe "/usr/bin/xmobar /home/constantine/.xmonad/xmobar2rc"
-            spawn "setxkbmap -layout us,ru -variant -option grp:caps_toggle,grp_led:scroll,terminate:ctrl_alt_bksp"
 
             xmonad defaults
                 { manageHook = manageDocks <+> myManageHook <+> manageHook defaultConfig
@@ -170,6 +168,10 @@
             -- Deincrement the number of windows in the master area
             , ((modm              , xK_period), sendMessage (IncMasterN (-1)))
 
+            , ((0, xF86XK_AudioLowerVolume   ), spawn "amixer -c 0 sset Master 2-")
+            , ((0, xF86XK_AudioRaiseVolume   ), spawn "amixer -c 0 sset Master 2+")
+            , ((0, xF86XK_AudioMute          ), spawn "amixer -c 0 sset Master toggle")
+
             -- Toggle the status bar gap
             -- Use this binding with avoidStruts from Hooks.ManageDocks.
             -- See also the statusBar function from Hooks.DynamicLog.
@@ -258,12 +260,14 @@
         -- To match on the WM_NAME, you can use 'title' in the same way that
         -- 'className' and 'resource' are used below.
         --
-        myManageHook = composeAll
-            [ className =? "MPlayer"        --> doFloat
-            , className =? "Gimp"           --> doFloat
-            , className =? "Edit_with_Emacs_FRAME" --> doCenterFloat
-            , resource  =? "desktop_window" --> doIgnore
-            , resource  =? "kdesktop"       --> doIgnore
+        myManageHook = composeOne
+            [ className =? "Smplayer"        -?> doFloat
+            , className =? "Gimp"           -?> doFloat
+            , className =? "XCalendar"      -?> doFloat
+            , className =? "Edit_with_Emacs_FRAME" -?> doCenterFloat
+            , resource  =? "desktop_window" -?> doIgnore
+            , resource  =? "kdesktop"       -?> doIgnore
+            , isFullscreen -?> myDoFullFloat
              ]
 
         ------------------------------------------------------------------------
