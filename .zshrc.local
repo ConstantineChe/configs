@@ -27,6 +27,7 @@ alias git-pup='git pull && git submodule init && git submodule update && git sub
 alias tchrom='chromium --proxy-server="socks5://localhost:9050"'
 alias ayy='cat'
 alias lmao='grep --color=auto'
+alias ayylmao='sudo !!'
 
 # 256 colors
 if [ "x$TERM" = "xxterm" ]
