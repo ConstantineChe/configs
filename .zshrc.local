@@ -24,6 +24,9 @@ alias emacs='emacsclient -ct'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias git-pup='git pull && git submodule init && git submodule update && git submodule status'
+alias tchrom='chromium --proxy-server="socks5://localhost:9050"'
+alias ayy='cat'
+alias lmao='grep --color=auto'
 
 # 256 colors
 if [ "x$TERM" = "xxterm" ]
@@ -42,6 +45,9 @@ export RUBYOPT=""
 
 # Home scripts
 export PATH=$HOME/scripts/:$PATH
+
+# Composer
+export PATH=$HOME/.composer/vendor/bin:$PATH
 
 # Default apps
 export EDITOR="emacsclient -ct"
