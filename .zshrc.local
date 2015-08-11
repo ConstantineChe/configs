@@ -25,9 +25,13 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias git-pup='git pull && git submodule init && git submodule update && git submodule status'
 alias tchrom='chromium --proxy-server="socks5://localhost:9050"'
+
+
+#Ayy Lmao
 alias ayy='cat'
 alias lmao='grep --color=auto'
-alias ayylmao='sudo !!'
+eval "$(thefuck --alias ayylmao)"
+
 
 # 256 colors
 if [ "x$TERM" = "xxterm" ]
