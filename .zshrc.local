@@ -67,7 +67,7 @@ export SHELL='/bin/zsh'
 #zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 
 # Command correction
-#setopt correctall
+unsetopt correct
 
 # no double entries in the shell history
 export HISTCONTROL="$HISTCONTROL erasedups:ignoreboth"
@@ -109,7 +109,7 @@ fi
 
 zstyle ':prompt:grml:left:items:user' pre '%F{green}'
 zstyle ':prompt:grml:left:items:at' pre '%F{green}'
-zstyle ':prompt:grml:left:items:path' pre '%F{blue}'
+zstyle ':prompt:grml:left:items:path' pre '%F{31}'
 zstyle ':prompt:grml:*:items:percent' token "
-$endprompt "
+$endprompt "'%F{white}'
 zstyle ':prompt:grml:left:items:percent' pre '%F{white}'
